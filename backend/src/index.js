@@ -7,9 +7,11 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-mongoose.connect('mongodb://goweek-ronaldo:goweek123@cluster0-shard-00-00-rzyfe.mongodb.net:27017,cluster0-shard-00-01-rzyfe.mongodb.net:27017,cluster0-shard-00-02-rzyfe.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', 
+mongoose.connect('mongodb://gooweek-kuka:kuka123@cluster0-shard-00-00-d3yzz.mongodb.net:27017,cluster0-shard-00-01-d3yzz.mongodb.net:27017,cluster0-shard-00-02-d3yzz.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', 
+// mongoose.connect('mongodb+srv://goweek-ronaldo:goweek123@cluster0-rzyfe.mongodb.net/test?retryWrites=true', 
+
 {
-    useNewUrlParser: true
+    useNewUrlParser: true,
 });
 
 app.use((req, res, next) => {
